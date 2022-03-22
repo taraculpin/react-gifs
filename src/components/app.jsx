@@ -11,7 +11,12 @@ class App extends Component {
         gifs: [],
         selectedGifId: "xUA7aOIFDR4ZgqLy8w"
       }
-    this.search("homer thinking")
+  }
+
+  selectedGif = (id) => {
+    this.setState({
+      selectedGifId: id
+    });
   }
 
   search = (query) => {
@@ -21,27 +26,24 @@ class App extends Component {
       limit: 10
     }, (error, result) => {
       this.setState({
-        gifs: result.data
+        gifs: result.data,
+        selectedGifId: result.data[0].id
       });
     });
   }
 
 
   render() {
-    const gifs = [
-      {id: "xUA7aOIFDR4ZgqLy8w"},
-      {id: "axu6dFuca4HKM"},
-    ];
     return (
       <div>
         <div className="left-scene">
           <SearchBar search={this.search} />
           <div className="selected-gif">
-              <Gif id={this.state.selectedGifId} />
+              <Gif id={this.state.selectedGifId}/>
           </div>
         </div>
         <div className="right-scene">
-          <GifList gifs={this.state.gifs}/>
+          <GifList gifs={this.state.gifs} selectedGif={this.selectedGif}/>
         </div>
       </div>
     );
