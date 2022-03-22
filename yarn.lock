@@ -3594,6 +3594,11 @@ gh-pages@^3.2.3:
     fs-extra "^8.1.0"
     globby "^6.1.0"
 
+giphy-api@^2.0.2:
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/giphy-api/-/giphy-api-2.0.2.tgz#458b8733f50818b602c7e582a75a3b3a8d7680cb"
+  integrity sha512-vZaLQhgMF0mDQSNpqooe4Zqoe2dWGqVYhh7Ar6I41BRtcZtfupr9avT23IIPScKBYfb3qAfiKQRQyKgLi8Lcxw==
+
 glob-parent@^5.1.2, glob-parent@~5.1.2:
   version "5.1.2"
   resolved "https://registry.yarnpkg.com/glob-parent/-/glob-parent-5.1.2.tgz#869832c58034fe68a4093c17dc15e8340d8401c4"
