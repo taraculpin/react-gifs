@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import SearchBar from "./search_bar.jsx";
 import Gif from "./gif.jsx";
 import GifList from "./gif_list.jsx";
-import giphy from 'giphy-api'; 
+import giphy from 'giphy-api';
 
 class App extends Component {
   constructor(props) {
