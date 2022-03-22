@@ -4,7 +4,6 @@ import React, { Component } from "react";
 
 class Gif extends Component {
   handleClick = (event) => {
-    console.log(event);
     this.props.selectedGif(this.props.id)
   }
   render() {

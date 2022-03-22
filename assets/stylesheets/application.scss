@@ -19,15 +19,15 @@
     }
   }
 
-  &:before {
-    content: '\F002';
-    position: absolute;
-    top: 35px;
-    left: 60px;
-    font-family: FontAwesome;
-    font-size: 2.6em;
-    opacity: 0.4;
-  }
+  // &:before {
+  //   content: '\F002';
+  //   position: absolute;
+  //   top: 35px;
+  //   left: 60px;
+  //   font-family: FontAwesome;
+  //   font-size: 2.6em;
+  //   opacity: 0.4;
+  // }
 
   .selected-gif {
     text-align: center;
