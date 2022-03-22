@@ -3,16 +3,18 @@ import ReactDOM  from "react";
 import React, { Component } from "react";
 
 class Gif extends Component {
-  constructor() {
-    query = "homer"
-    giphyUrl = `https://api.giphy.com/v1/gifs/search?api_key=r3o3DD8ErjZWUXCpXCq70mWKTjnW33xL&q=${query}`
-  }
+  // constructor(props) {
+    // super(props);
+    
+
+  // }
 
   render() {
+    const src = `https://media.giphy.com/media/${this.props.id}/giphy/200w.gif`
+    // const src = `https://api.giphy.com/v1/gifs/search?api_key=r3o3DD8ErjZWUXCpXCq70mWKTjnW33xL&q=${query}`
+    // const gif = src.f
     return (
-      <div className="gif">
-        <img src={giphyUrl.first}/>
-      </div>
+        <img className="gif" src={src}/>
     );
   }
 }
